@@ -1,0 +1,95 @@
+---
+title: Cynthia Ebert
+layout: home
+---
+
+<section
+  class="hero container flex flex-column align-start justify-center col-start-3 col-end-11"
+>
+  <h1>
+    <span class="block fs-500 mb-600">Hi, my name is</span>
+    <span class="inline-block fs-900 ff-bold lh-12 name">Cynthia Ebert.</span>
+    <span class="block fs-900 ff-bold lh-12 punchline mb-600">
+      Building things for
+      <div class="flex-inline align-end rotate">
+        <span>the web.</span><span>you!</span>
+      </div>
+    </span>
+    <p class="fs-500 mb-950">
+      I'm a German software developer and based in Breda, the Netherlands.
+      Currently working for <a href="">Monkey Bubble</a>.
+    </p>
+  </h1>
+  <a href="" class="button block fs-400 mt-750">Check out my resume!</a>
+</section>
+
+<section class="about container flex flex-row col-start-3 col-end-12">
+  <div class="">
+    <h2 class="underline large fs-700 ff-bold mb-950">About me</h2>
+    <!-- <p class="fs-500">
+        I'm passionate about bringing both the technical and visual aspects of
+        digital products to life. User experience, beautiful pixels and writing
+        clean accessible, human code matters to me.
+      </p> -->
+    <p class="fs-500">
+      I recently graduated from
+      <a href="">Ansbach University of Applied Science</a> after completing
+      Bachelor of Arts of Multimedia and Communication in the fields of media
+      design and media informatics.
+    </p>
+    <p class="fs-500">
+      I'm happiest when I'm creating, learning, exploring and thinking about how
+      to make things better.
+    </p>
+    <p class="fs-500">
+      In my free-time I love to work behind the scenes of esports productions by
+      developing helpful tools or being part of the live broadcast crew.
+    </p>
+  </div>
+  <div>
+    <img
+      src="../assets/img/headshot-coloured.webp"
+      type="image/webp"
+      srcset="
+        ../assets/img/headshot-coloured-1k.webp  1000w,
+        ../assets/img/headshot-coloured-500.webp  500w
+      "
+      sizes="(max-width: 50em) 21.875vw, 100vw"
+      alt=""
+    />
+  </div>
+</section>
+
+<section class="projects container flex flex-column col-start-3 col-end-11">
+  <h2 class="underline large fs-700 ff-bold mb-950">The Things I've Built</h2>
+
+  {% for post in site.posts %}
+  <article class="project col-start-3 col-end-9 inner-grid mb-950">
+    <img
+      src="../assets/img/dummy_projectherodummy_projec.jpg"
+      alt=""
+      class="col-start-1 col-end-8 row-start-1 row-end-4 border-rounded mb-500 row-start-1 row-end-4"
+    />
+    <h3
+      class="fs-600 ff-bold text-shadow mb-500 col-start-5 col-end-9 row-start-2 row-end-3"
+    >
+      {{ post.title }}
+    </h3>
+    <div
+      class="textbox border-rounded fs-500 col-start-5 col-end-9 row-start-3 row-end-5"
+    >
+      <p>{{ post.excerpt }}</p>
+    </div>
+    <div
+      class="technologies fs-400 col-start-1 col-end-5 row-start-4 row-end-5"
+    >
+      {% for tag in post.tags %}
+      <span>{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </article>
+  {% endfor %}
+</section>
+<section>
+  <footer></footer>
+</section>
