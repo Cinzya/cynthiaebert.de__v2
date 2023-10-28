@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script type="text/javascript">{% include mobile-menu.js %}</script>
   </head>
 
   <body>
     {%- include navigation.html -%}
-    <main>{{ content }}</main>
+    <main onclick="closeMenu()">{{ content }}</main>
   </body>
 </html>

@@ -3,25 +3,27 @@
   <span class="logo fs-400">{{ site.title }}</span>
 
   <button
-    class="mobile-nav-toggle"
-    :aria-expanded="menuState"
+    id="mobile-nav-toggle"
+    aria-expanded="false"
     artia-controls="primary-navigation"
   >
     <img
-      class="icon-menu"
+      id="icon-menu"
       src="../assets/icons/menu.svg"
       alt=""
       aria-hidden="true"
+      onclick="openMenu()"
     />
     <img
-      class="icon-close"
-      src="{{site.baseurl}}/assets/icons/close.svg"
+      id="icon-close"
+      src="../assets/icons/close.svg"
       alt=""
       aria-hidden="true"
+      onclick="closeMenu()"
     />
     <span class="visually-hidden">Menu</span>
   </button>
-  <div class="navigation-wrapper" :data-visible="menuVisibility">
+  <div id="navigation-wrapper" data-visible="false">
     <nav class="fs-400" id="primary-navigation">
       {% for item in site.navigation_header %} {% if item.url contains '://' %}
       {% assign url = item.url %} {% else %} {% assign url = item.url |
