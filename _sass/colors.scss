@@ -1,0 +1,46 @@
+$neutral-800: #1d1d20;
+$neutral-700: #3f3f43;
+$neutral-200: #cccccc;
+$neutral-100: #ffffff;
+$primary: #74c746;
+$secondary: #4274bf;
+$primary-alt: rgb(194, 185, 61);
+$secondary-alt: rgb(197, 92, 121);
+
+$neutral-800-transparent: rgba(29, 29, 32, 0.85);
+
+.color-neutral-800 {
+  color: $neutral-800;
+}
+
+.bg-color-neutral-800 {
+  background-color: $neutral-800;
+}
+
+.bg-color-neutral-700 {
+  background-color: $neutral-700;
+}
+
+.color-neutral-200 {
+  color: $neutral-200;
+}
+
+.bg-color-neutral-200 {
+  background-color: $neutral-200;
+}
+
+.color-primary {
+  color: $primary;
+}
+
+.bg-color-primary {
+  background-color: $primary;
+}
+
+.color-secondary {
+  color: $secondary;
+}
+
+.bg-color-secondary {
+  background-color: $secondary;
+}

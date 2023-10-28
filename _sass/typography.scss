@@ -1,0 +1,31 @@
+$ff-primary: "GeneralSans", "General Sans", sans-serif;
+
+$ff-body: "GeneralSans-Regular", "General Sans Regular", sans-serif;
+$ff-heading: "GeneralSans-Bold", "General Sans Bold", sans-serif;
+$ff-semibold: "GeneralSans-SemiBold", "General Sans SemiBold", sans-serif;
+
+.ff-primary {
+  font-family: $ff-primary;
+}
+
+.ff-body {
+  font-family: $ff-body;
+}
+
+.ff-bold {
+  font-family: $ff-primary;
+  font-weight: bold;
+}
+
+.ff-semibold {
+  font-family: $ff-primary;
+  font-weight: 600;
+}
+
+.lh-12 {
+  line-height: 1.2;
+}
+
+.lh-1 {
+  line-height: 1;
+}
