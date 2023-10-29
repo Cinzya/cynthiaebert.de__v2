@@ -237,6 +237,9 @@ header {
 
   .logo {
     font-family: typography.$ff-semibold;
+    &::after {
+      width: 0;
+    }
   }
 
   #mobile-nav-toggle {
@@ -343,6 +346,12 @@ header {
 
     h3 {
       text-align: right;
+      a {
+        text-align: right;
+        &::after {
+          width: 0;
+        }
+      }
     }
 
     .textbox {
@@ -353,6 +362,7 @@ header {
       background-color: color.$neutral-700;
       p {
         text-align: right;
+        @extend .text-justify;
       }
     }
   }
@@ -367,7 +377,7 @@ header {
     }
   }
 
-  .project:nth-child(2n) {
+  .project:nth-child(odd) {
     img {
       grid-column-start: 2;
       grid-column-end: 9;
@@ -424,6 +434,53 @@ header {
   }
 }
 
+.post {
+  padding: 6.25rem 0;
+
+  img:first-child {
+    width: calc(100% + 2 * 4.375rem);
+    max-width: 100vw;
+    height: 46rem;
+    margin-left: -4.375rem;
+    margin-right: -4.375rem;
+    object-fit: cover;
+  }
+
+  aside {
+    @extend .row-start-3;
+    p {
+      @extend .mb-750;
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    @extend .ff-bold;
+    @extend .fs-500;
+  }
+
+  article {
+    @extend .row-start-3;
+
+    * {
+      @extend .col-start-1;
+      @extend .col-end-11;
+    }
+    p:nth-child(-n + 3),
+    h2:nth-child(2) {
+      @extend .col-start-1;
+      @extend .col-end-7;
+    }
+    h2 {
+      @extend .ff-bold;
+      @extend .fs-700;
+      @extend .underline;
+      @extend .large;
+      @extend .mt-1200;
+    }
+  }
+}
+
 // Tablet / Small Desktop
 @media (max-width: 87.5em) {
   section {
@@ -435,7 +492,6 @@ header {
     }
   }
   .project {
-    h3,
     .textbox {
       grid-column-start: 3;
     }
@@ -445,7 +501,7 @@ header {
     }
   }
 
-  .project:nth-child(2n) {
+  .project:nth-child(odd) {
     .textbox {
       grid-column-start: 1;
       grid-column-end: 7 !important;
@@ -683,7 +739,7 @@ header {
       }
     }
 
-    .project:nth-child(2n) {
+    .project:nth-child(odd) {
       h3,
       .textbox,
       .technologies,

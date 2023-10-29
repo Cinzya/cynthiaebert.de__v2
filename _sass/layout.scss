@@ -18,6 +18,13 @@ $container-mobile: 1.5625rem;
   column-gap: $gutter;
 }
 
+.inner-grid-10 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: autofit(4, min-content);
+  column-gap: $gutter;
+}
+
 .row-start-1 {
   grid-row-start: 1;
 }

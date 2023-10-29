@@ -29,3 +29,8 @@ $ff-semibold: "GeneralSans-SemiBold", "General Sans SemiBold", sans-serif;
 .lh-1 {
   line-height: 1;
 }
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}

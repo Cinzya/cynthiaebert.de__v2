@@ -2,4 +2,27 @@
 layout: default
 ---
 
-{{ content }}
+<div class="grid post">
+  <img
+    class="col-start-1 col-end-13"
+    src="{{site.baseurl}}/assets/img/posts/{{ page.hero }}"
+    alt="{{ page.title }}"
+  />
+
+  <h1 class="row-start-2 col-start-2 col-end-12 fs-900 ff-bold mb-600">
+    {{ page.title }}
+  </h1>
+
+  <aside class="col-start-9 col-end-12">
+    <h3>Client</h3>
+    <p>{{ page.client }}</p>
+
+    <h3>My Responsibilities</h3>
+    <p>{{ page.responsibilities | array_to_sentence_string }}</p>
+
+    <h3>Stack</h3>
+    <p>{{ page.tags | array_to_sentence_string }}</p>
+  </aside>
+
+  <article class="inner-grid-10 col-start-2 col-end-12">{{ content }}</article>
+</div>
