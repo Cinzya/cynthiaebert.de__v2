@@ -23,7 +23,7 @@ layout: home
   <a href="" class="button block fs-400 mt-750">Check out my resume!</a>
 </section>
 
-<section class="about container flex flex-row col-start-3 col-end-12">
+<section class="about container flex flex-row col-start-3 col-end-11">
   <div class="">
     <h2 class="underline large fs-700 ff-bold mb-950">About me</h2>
     <!-- <p class="fs-500">
@@ -71,17 +71,17 @@ layout: home
       class="col-start-1 col-end-8 row-start-1 row-end-4 border-rounded mb-500 row-start-1 row-end-4"
     />
     <h3
-      class="fs-600 ff-bold text-shadow mb-500 col-start-5 col-end-9 row-start-2 row-end-3"
+      class="fs-600 ff-bold text-shadow mb-500 col-start-1 col-end-9 row-start-2 row-end-3"
     >
-      {{ post.title }}
+      <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
     </h3>
     <div
-      class="textbox border-rounded fs-500 col-start-5 col-end-9 row-start-3 row-end-5"
+      class="textbox border-rounded fs-500 col-start-4 col-end-9 row-start-3 row-end-5"
     >
-      <p>{{ post.excerpt }}</p>
+      {{ post.excerpt }}
     </div>
     <div
-      class="technologies fs-400 col-start-1 col-end-5 row-start-4 row-end-5"
+      class="technologies fs-400 col-start-1 col-end-4 row-start-4 row-end-5"
     >
       {% for tag in post.tags %}
       <span>{{ tag }}</span>
@@ -90,6 +90,6 @@ layout: home
   </article>
   {% endfor %}
 </section>
-<section>
+<section class="footer col-start-3 col-end-11">
   <footer></footer>
 </section>
