@@ -1,5 +1,5 @@
 function openMenu() {
-  console.log("openMenu");
+  //   console.log("openMenu");
   document
     .getElementById("mobile-nav-toggle")
     .setAttribute("aria-expanded", "true");
@@ -10,7 +10,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  console.log("closeMenu");
+  //   console.log("closeMenu");
   document
     .getElementById("mobile-nav-toggle")
     .setAttribute("aria-expanded", "false");

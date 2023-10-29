@@ -1,6 +1,6 @@
 {% if site.navigation_header %}
 <header ref="menu" class="flex justify-between">
-  <span class="logo fs-400">{{ site.title }}</span>
+  <a href="/" class="logo fs-400">{{ site.title }}</a>
 
   <button
     id="mobile-nav-toggle"
@@ -9,14 +9,14 @@
   >
     <img
       id="icon-menu"
-      src="../assets/icons/menu.svg"
+      src="{{site.baseurl}}/assets/icons/menu.svg"
       alt=""
       aria-hidden="true"
       onclick="openMenu()"
     />
     <img
       id="icon-close"
-      src="../assets/icons/close.svg"
+      src="{{site.baseurl}}/assets/icons/close.svg"
       alt=""
       aria-hidden="true"
       onclick="closeMenu()"
