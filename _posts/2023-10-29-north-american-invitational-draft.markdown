@@ -4,7 +4,7 @@ client: Rally Cry
 responsibilities: [Frontend Development]
 tags: [React, Vite]
 category: project
-thumbnail: nacl-hud-thumbnail.png
+thumbnail: toast-thumb.webp
 hero: nacl-hero.webp
 excerpt_separator: <!--more-->
 ---
