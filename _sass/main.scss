@@ -474,11 +474,13 @@ aside#mail {
     max-width: 100vw;
     height: 46rem;
     margin-left: -4.375rem;
-    margin-right: -4.375rem;
+    margin-right: 4.375rem;
     object-fit: cover;
   }
 
   aside {
+    z-index: 1;
+    align-self: start;
     @extend .row-start-3;
     p {
       @extend .mb-750;
@@ -518,7 +520,7 @@ aside#mail {
   }
 }
 
-// Tablet / Small Desktop
+// Tablet / Small Desktop 1400px
 @media (max-width: 87.5em) {
   section {
     &.col-start-3 {
@@ -537,7 +539,6 @@ aside#mail {
       grid-column-end: 3;
     }
   }
-
   .project:nth-child(odd) {
     .textbox {
       grid-column-start: 1;
@@ -562,10 +563,13 @@ aside#mail {
   * {
     transition: filter 0.1s ease-in-out;
   }
+  aside#socials,
+  aside#mail {
+    visibility: hidden;
+  }
   .desktop {
     display: none;
   }
-
   .blur {
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
@@ -573,7 +577,6 @@ aside#mail {
     -ms-filter: blur(5px);
     filter: blur(5px);
   }
-
   header {
     padding: 1.875rem layout.$container-mobile 1.875rem layout.$container-mobile;
 
@@ -670,7 +673,6 @@ aside#mail {
       }
     }
   }
-
   .hero {
     .rotate {
       height: 2.5625rem;
@@ -678,7 +680,6 @@ aside#mail {
       transform: translateY(9px);
     }
   }
-
   .about {
     div:first-child {
       min-width: 100%;
@@ -701,7 +702,6 @@ aside#mail {
       height: auto;
     }
   }
-
   .dropdown.mobile {
     display: block;
 
@@ -716,7 +716,6 @@ aside#mail {
       background-color: inherit;
     }
   }
-
   .projects {
     article {
       margin-bottom: sizing.$mb-850;
@@ -784,6 +783,26 @@ aside#mail {
         grid-column-start: 1 !important;
         grid-column-end: 9 !important;
       }
+    }
+  }
+  .post {
+    img:first-child {
+      margin-left: -2rem;
+    }
+    aside {
+      grid-column-start: 1 !important;
+      grid-column-end: 12 !important;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        flex-grow: 1;
+      }
+    }
+    article {
+      grid-row-start: 4 !important;
+      grid-row-end: 5;
     }
   }
 }

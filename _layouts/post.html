@@ -14,14 +14,20 @@ layout: default
   </h1>
 
   <aside class="col-start-9 col-end-12">
-    <h3>Client</h3>
-    <p>{{ page.client }}</p>
+    <div>
+      <h3>Client</h3>
+      <p>{{ page.client }}</p>
+    </div>
 
-    <h3>My Responsibilities</h3>
-    <p>{{ page.responsibilities | array_to_sentence_string }}</p>
+    <div>
+      <h3>My Responsibilities</h3>
+      <p>{{ page.responsibilities | array_to_sentence_string }}</p>
+    </div>
 
-    <h3>Stack</h3>
-    <p>{{ page.tags | array_to_sentence_string }}</p>
+    <div>
+      <h3>Stack</h3>
+      <p>{{ page.tags | array_to_sentence_string }}</p>
+    </div>
   </aside>
 
   <article class="inner-grid-10 col-start-2 col-end-12">{{ content }}</article>
