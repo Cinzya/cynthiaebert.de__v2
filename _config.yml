@@ -83,3 +83,11 @@ navigation_header:
     url: /
   - title: Contact
     url: /
+
+socials:
+  - url: https://twitter.com/Cinzzya
+    icon: "x.svg"
+  - url: https://github.com/Cinzya
+    icon: "github.svg"
+  - url: https://www.linkedin.com/in/cynthiaebert/
+    icon: "linkedin.svg"

@@ -251,6 +251,31 @@ header {
   }
 }
 
+// Aside
+
+aside.socials,
+aside.mail {
+  position: fixed;
+  bottom: 3.75rem;
+
+  a {
+    img {
+      margin-top: 1.4375rem;
+
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
+aside.socials {
+  margin-left: 4.375rem;
+}
+aside.mail {
+  margin-right: 4.375rem;
+  right: 0;
+}
+
 // Hero
 
 .hero {
@@ -393,10 +418,10 @@ header {
     }
     .textbox {
       grid-column-start: 1;
-      grid-column-end: 5;
+      grid-column-end: 6;
     }
     .technologies {
-      grid-column-start: 5;
+      grid-column-start: 6;
       grid-column-end: 9;
       justify-content: start;
       span {
@@ -466,10 +491,10 @@ header {
       @extend .col-start-1;
       @extend .col-end-11;
     }
-    p:nth-child(-n + 3),
-    h2:nth-child(2) {
-      @extend .col-start-1;
-      @extend .col-end-7;
+    h2,
+    p {
+      @extend .col-start-3;
+      @extend .col-end-9;
     }
     h2 {
       @extend .ff-bold;
@@ -477,6 +502,11 @@ header {
       @extend .underline;
       @extend .large;
       @extend .mt-1200;
+    }
+    p:nth-child(-n + 3),
+    h2:nth-child(2) {
+      @extend .col-start-1;
+      @extend .col-end-7;
     }
   }
 }
