@@ -253,8 +253,11 @@ header {
 
 // Aside
 
-aside.socials,
-aside.mail {
+aside#socials,
+aside#mail {
+  transition: opacity 0.3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
   position: fixed;
   bottom: 3.75rem;
 
@@ -266,12 +269,16 @@ aside.mail {
       height: 26px;
     }
   }
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
-aside.socials {
+aside#socials {
   margin-left: 4.375rem;
 }
-aside.mail {
+aside#mail {
   margin-right: 4.375rem;
   right: 0;
 }

@@ -1,5 +1,5 @@
 {% if site.socials %}
-<aside class="socials">
+<aside id="socials">
   {% for social in site.socials %} {% assign url = social.url %}
 
   <a class="alternative-link" href="{{ url }}">
@@ -11,7 +11,7 @@
 
   {% endfor %}
 </aside>
-<aside class="mail">
+<aside id="mail">
   <a class="alternative-link" href="mailto: contact@cynthiaebert.de">
     <img src="{{site.baseurl}}/assets/img/icons/mail.svg" alt="E-Mail" />
   </a>
