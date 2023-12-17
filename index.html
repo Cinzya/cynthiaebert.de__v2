@@ -48,6 +48,7 @@ layout: home
   </div>
   <div>
     <img
+      class="border-rounded"
       src="../assets/img/headshot-coloured.webp"
       type="image/webp"
       srcset="
@@ -65,11 +66,15 @@ layout: home
 
   {% for post in site.posts %}
   <article class="project col-start-3 col-end-9 inner-grid mb-950">
-    <img
-      src="{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}"
-      alt=""
-      class="col-start-1 col-end-8 row-start-1 row-end-4 border-rounded mb-500 row-start-1 row-end-4"
-    />
+    <div
+      class="img-wrapper col-start-1 col-end-8 row-start-1 row-end-4 border-rounded mb-500 row-start-1 row-end-4"
+    >
+      <img
+        src="{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}"
+        alt=""
+        class="border-rounded"
+      />
+    </div>
     <h3
       class="fs-600 ff-bold text-shadow mb-500 col-start-1 col-end-9 row-start-2 row-end-3"
     >
