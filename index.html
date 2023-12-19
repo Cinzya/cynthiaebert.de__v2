@@ -23,7 +23,7 @@ layout: home
   <a href="" class="button block fs-400 mt-750">Check out my resume!</a>
 </section>
 
-<section class="about container flex flex-row col-start-3 col-end-11">
+<section class="about container flex flex-row col-start-4 col-end-11">
   <div class="">
     <h2 class="underline large fs-700 ff-bold mb-950">About me</h2>
     <!-- <p class="fs-500">
@@ -61,20 +61,21 @@ layout: home
   </div>
 </section>
 
-<section class="projects container flex flex-column col-start-3 col-end-11">
+<section class="projects container flex flex-column col-start-4 col-end-10">
   <h2 class="underline large fs-700 ff-bold mb-950">The Things I've Built</h2>
 
   {% for post in site.posts %}
-  <article class="project col-start-3 col-end-9 inner-grid mb-950">
-    <div
-      class="img-wrapper col-start-1 col-end-8 row-start-1 row-end-4 border-rounded mb-500 row-start-1 row-end-4"
+  <article class="project col-start-3 col-end-9 inner-grid mb-1200">
+    <a
+      class="img-wrapper jumpy-link col-start-1 col-end-8 row-start-1 row-end-4 border-rounded mb-500 row-start-1 row-end-4"
+      href="{{ post.url | relative_url }}"
     >
       <img
         src="{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}"
         alt=""
         class="border-rounded"
       />
-    </div>
+    </a>
     <h3
       class="fs-600 ff-bold text-shadow mb-500 col-start-1 col-end-9 row-start-2 row-end-3"
     >

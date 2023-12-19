@@ -563,6 +563,12 @@ aside#mail {
       grid-column-end: 12;
     }
   }
+  .about {
+    grid-column-start: 2 !important;
+  }
+  .projects {
+    grid-column: 2 / 12 !important;
+  }
   .project {
     .textbox {
       grid-column-start: 3;

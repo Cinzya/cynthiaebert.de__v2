@@ -295,6 +295,14 @@ $container-mobile: 1.5625rem;
     grid-column-start: 1 !important;
   }
 
+  .col-start-4 {
+    grid-column-start: 1 !important;
+  }
+
+  .col-end-10 {
+    grid-column-end: 13 !important;
+  }
+
   .col-end-11 {
     grid-column-end: 13 !important;
   }
