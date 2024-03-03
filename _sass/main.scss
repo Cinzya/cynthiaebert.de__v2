@@ -381,6 +381,33 @@ aside#mail {
   img {
     width: auto;
   }
+
+  .portrait-wrapper {
+    position: relative;
+    height: min-content;
+    &::before {
+      transform: rotateZ(10deg);
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: solid 2px color.$secondary;
+    }
+    &::after {
+      transform: rotateZ(-7deg);
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: solid 2px color.$primary;
+    }
+  }
 }
 
 .projects {
@@ -714,6 +741,7 @@ aside#mail {
       }
     }
   }
+
   .hero {
     .rotate {
       height: 2.5625rem;
@@ -721,6 +749,7 @@ aside#mail {
       transform: translateY(9px);
     }
   }
+
   .about {
     div:first-child {
       min-width: 100%;
