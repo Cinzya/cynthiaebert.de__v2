@@ -1,6 +1,6 @@
 ---
 layout: post
-client: Rally Cry
+client: Riot Games
 responsibilities: [Frontend Development, Data Visualization]
 tags: [React, D3]
 category: project
@@ -9,7 +9,7 @@ hero: nacl-hero.webp
 excerpt_separator: <!--more-->
 ---
 
-The NACL HUD is a React application that is used to display information about the current game being played in the North American Collegiate League. It is used by casters and observers to display information about the game to viewers<!--more-->
+The North American Challengers League, needed a fully automated graphics system for all their in-game overlays and game statistics as an alternative to <b>Barracks</b>. In the span of one month, my collegueges and I wrote full custom code for a top scoreboard and introduced new graphics such as post-game statistics, leaderboards, gold graphs and more on a bi-weekly basis.<!--more-->
 
 ## Problem & Goals
 
